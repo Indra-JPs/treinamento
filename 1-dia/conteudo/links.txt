@@ -1,0 +1,31 @@
+Treinamento - 05/02/2020
+
+Links 
+
+* slide
+	- https://infograph.venngage.com/ps/J7zcZIgx0/treinamento-indra
+
+* html 
+	- https://www.codigofonte.com.br/artigos/principais-tags-de-html
+
+* css
+	- http://contembits.com.br/minicursos/css/Estrutura-do-CSS.aspx
+	- https://youtu.be/FRhM6sMOTfg
+
+* JavaScript
+	- Curso - https://youtu.be/BXqUH86F-kA
+	- Curso - https://rocketseat.com.br/starter/curso-gratuito-javascript
+	- HTTP - https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
+	- Tipos - https://developer.mozilla.org/pt-BR/docs/Glossario/Primitivo
+	- Variáveis - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Values,_variables,_and_literals
+	- Operadores - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators
+	- Arrays - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array
+	- Loops - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Lacos_e_iteracoes#for...in_statement
+	- Ajax - https://developer.mozilla.org/pt-BR/docs/Web/Guide/AJAX/Getting_Started
+	- Callback - https://developer.mozilla.org/pt-BR/docs/Glossario/Callback_function
+	- Promise - https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise
+	- Call e Apply - http://programadorobjetivo.co/call-apply-e-bind-em-javascript/
+	- Event Delegate - https://github.com/wescleymatos/boas-praticas-js/blob/master/javascript-boas-praticas/DELEGATE.md
+
+* Desafio
+	- https://github.com/gabrieldarezzo/helpjs-ravi
