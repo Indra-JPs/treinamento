@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="date">
+
+    </div>
+
+    <script type = "text/javascript">
+
+        let dataLocal = document.getElementById('date');
+        var d = new Date();
+
+        let day = d.getDate();
+        let month = d.getMonth() + 1;
+        let year = d.getFullYear();
+
+        dataLocal.innerHTML = `${day}` + `/` + `${month}` + `/` + `${year}`;
+
+    </script>
+</body>
+</html>

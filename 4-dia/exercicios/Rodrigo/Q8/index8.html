@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div#not-right{
+            color:red;
+            font-size:15px;
+            visibility: hidden;
+        }
+        #cpf{
+            border-color:default;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <form id="forms" onsubmit="event.preventDefault(); sendCpf()">
+        <label for="cpf">CPF:</label>
+        <br />
+        <!-- <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" -->
+        <input maxlength="14" id="cpf" placeholder="Ex.: 000.000.000-00"/>
+        <div id = "not-right">Insert a valid value</div>
+        <br />
+        <button type = "submit">Enviar</button>
+    </form>
+
+    <script type="text/javascript" src="index8.js">
+    </script>
+</body>
+</html>

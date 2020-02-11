@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); divisionRest(div1,div2)">
+        <input id="div1" placeholder="div1" type="number">
+        <br />
+        <input id="div2" placeholder="div2" type="number">
+        <br />
+        <button id="btn-div" type = "submit">Calcular</button>
+        <br />
+        <br />
+        <label for="resultado-div">Resultado:</label>
+        <br />
+        <input id="resultado-div" readonly="readonly">
+    </form>
+
+    <script type="text/javascript">
+        //this function sums two elements
+        const divisionRest = (div1,div2) => {
+
+            let fielddiv = document.getElementById('resultado-div');
+          
+            if(parseInt(div2.value) === 0){
+                fielddiv.value = "no valid division for 0"
+
+            }
+            else{
+                
+                let div = parseInt(div1.value) % parseInt(div2.value);
+                fielddiv.value = div
+            }
+        }
+    </script>
+</body>
+</html>

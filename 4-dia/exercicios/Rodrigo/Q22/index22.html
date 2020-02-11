@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); percentage(number1)">
+        <input id="number1" placeholder="type your birth year" type="number">
+        <br />
+
+        <button id="btn-mult" type = "submit">Calcular</button>
+        <br />
+        <br />
+        <label for="resultado-percentage">Resultado:</label>
+        <br />
+        <input id="resultado-percentage" readonly="readonly">
+    </form>
+
+    <script type="text/javascript">
+        //this function sums two elements
+        const percentage = (number1) => {
+
+            let el1 = 2020 - parseInt(number1.value);
+
+            let fielddiv = document.getElementById('resultado-percentage');
+          
+            if(el1 === ''){
+                fielddiv.value = 'invalid data';
+            }
+
+            else if(el1 >= 18){
+                fielddiv.value = `you're adult`;
+            }
+            else{
+                fielddiv.value = `you're not adult yet`;
+            }
+        }
+    </script>
+</body>
+</html>
