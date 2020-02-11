@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão Seis</title>
+</head>
+<body>
+    <h2>Questão Seis</h2>
+    <img id="apagada" src="https://www.devfuria.com.br/javascript/code-lampada/lampada-off.gif">
+    <script type="text/javascript">
+    var element = document.getElementById('apagada');
+
+    element.onmouseover = function(){
+        if(element.src.match('lampada-on')){
+            element.scr = "https://www.devfuria.com.br/javascript/code-lampada/lampada-off.gif";
+        }else{
+            element.src = "https://www.devfuria.com.br/javascript/code-lampada/lampada-on.gif";
+        }
+    };
+    </script>
+</body>
+</html>

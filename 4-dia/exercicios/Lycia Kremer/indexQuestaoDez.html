@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão Dez</title>
+</head>
+<body>
+    <p>Primeiro Valor:</p>
+    <input type="text" id="soma1" name="soma1">
+    <p>Segundo Valor:</p>
+    <input type="text" id="soma2" name="soma2">
+    <input type="button" id="resultado-soma" name="resultado" value="Somar">
+
+    <div id="resultado"></div>
+
+    <script>
+        const btn = document.getElementById("resultado-soma");
+        //Questão 12
+        function soma(){
+            let valor1 = parseInt(document.getElementById("soma1").value);
+            let valor2 = parseInt(document.getElementById("soma2").value);
+            resultado.innerHTML = (valor1 + valor2); 
+            
+        }
+
+        btn.addEventListener("click", soma);
+    </script>
+
+</body>
+</html>
