@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="utf-8">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <form>
+        Nome completo:<br>
+        <input type="text" name="nomeCompleto" id="inputNome" placeholder="Digite aqui">
+        <input type="button" id="btnExibir" value="Exibir nome">
+        <script type="text/javascript" >
+            document.getElementById("btnExibir").addEventListener("click", function(){
+                //const nome = document.getElementById('inputNome').value;
+                //alert('O nome completo é: ' + nome);
+                const nome = document.getElementById("inputNome");
+                alert(nome.value.length);
+            });
+            //alert("Olá mundo");
+        </script>
+    </form>
+</body>
+</html>
