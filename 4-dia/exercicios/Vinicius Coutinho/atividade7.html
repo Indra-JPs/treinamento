@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Atividade 7</title>
+</head>
+<body>
+<p>Nome Completo:</p>
+<input type="text" name="nome" id="nome" placeholder="Digite seu nome"/>
+<br />
+<input type="text" name="nome" id="sobrenome" placeholder="Digite seu sobrenome"/>
+<br />
+<input type="button" value="Exibir Nome" id="btn-exibir-nome"/>
+<hr />
+<script type="text/javascript">  
+document.getElementById("btn-exibir-nome").addEventListener("click", function() {
+const nome = document.getElementById("nome", "sobrenome");
+  alert('O Nome Completo é: '+ nome.value +'\n O Sobrenome é: ' + sobrenome.value );
+  
+});
+</script>
+</body>
+</html>

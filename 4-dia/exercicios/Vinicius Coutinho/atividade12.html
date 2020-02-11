@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>     
+        <style type="text/css">
+            #quadrado {
+            height: 100px;
+            width: 100px;
+            }
+        </style>
+    <div id="quadrado" ></div>
+
+    <div>
+        <input type="button" id="vermelho" value="red">
+        <input type="button" id="verde" value="green">
+    </div>
+
+    <script type="text/javascript">
+    document.getElementById("vermelho").addEventListener('click', function(){
+        document.getElementById('quadrado').style.backgroundColor = '#f00';
+    });
+    
+    document.getElementById('verde').addEventListener('click', function(){
+        document.getElementById('quadrado').style.backgroundColor = '#11b819';
+    });
+    </script>
+</body>
+</html>

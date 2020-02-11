@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="soma1" name="numero1">
+    <input type="text" id="soma2" name="numero2">
+    <button id="resultado-soma">Resultado</button>
+    
+    <div id="resultado"></div>
+
+    <script type= "text/javascript">
+    
+    var btn = document.getElementById("resultado-soma");
+
+    function somar (){
+        var valor1= parseInt(document.getElementById("soma1").value);
+        var valor2= parseInt(document.getElementById("soma2").value);
+        var resultado = document.getElementById("resultado");
+        
+        resultado.innerHTML= valor1 + valor2
+
+        // alert(document.getElementById('resultado-soma').value = valor1 + valor2);
+    }
+    btn.addEventListener("click", somar);
+        
+    </script>
+</body>
+</html>
