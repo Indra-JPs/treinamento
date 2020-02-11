@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="int" value="">
+    <button type="button"  id="btn" >Button</button>
+    <script>
+        document.getElementById('btn').addEventListener("click", function(){
+           let numero=document.getElementById('int').value
+          //alert(numero)
+            if(numero%2===0){
+                alert("par")
+            }
+            else{
+                alert("impar")
+            }
+        })
+    </script>
+</body>
+</html>
