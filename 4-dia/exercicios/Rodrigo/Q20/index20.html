@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); multply(number1,number2)">
+        <input id="number1" placeholder="number1" type="number">
+        <br />
+        <input id="number2" placeholder="number2" type="number">
+        <br />
+        <button id="btn-mult" type = "submit">Calcular</button>
+        <br />
+        <br />
+        <label for="resultado-multiply">Resultado:</label>
+        <br />
+        <input id="resultado-multiply" readonly="readonly">
+    </form>
+
+    <script type="text/javascript">
+        //this function sums two elements
+        const multply = (el1,el2) => {
+
+            let fielddiv = document.getElementById('resultado-multiply');
+          
+            if(el1.value === '' || el2.value === ''){
+                fielddiv.value = 0;
+            }
+            else{
+                
+                let mult = parseInt(el1.value) * parseInt(el2.value);
+                fielddiv.value = mult;
+            }
+        }
+    </script>
+</body>
+</html>

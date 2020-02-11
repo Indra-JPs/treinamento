@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="forms" onsubmit="event.preventDefault(); sendData()">
+        <label for="data">Data:</label>
+        <br />
+        <!-- <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'');" -->
+        <input id="data" placeholder="insert a data"/>
+ 
+        <button type = "submit">Enviar</button>
+    </form>
+
+    <script type = "text/javascript">
+
+        let sendData = () => {
+            let data = document.getElementById('data').value;
+            let letters = /dota/;
+            let flag = letters.test(data);
+            flag === true ? alert(`'${data}' (verdadeiro)`) : alert(`'${data}' (falso)`);
+        }
+
+    </script>
+</body>
+</html>

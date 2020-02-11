@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <script type = "text/javascript">
+
+        var deuses = ['Aegir', 'Aud', 'Balder', 'Bragi', 'Búri', 'Dag', 'Dellingr'];
+        let el = document.getElementsByTagName('li');
+        // el[0].innerHTML = "sfsdfsdfs"
+
+        let quantity = deuses.length;
+        let i = 0;
+        while(i < quantity){
+            el[i].innerHTML = deuses[i];
+            i += 1;
+        }
+
+
+
+        // el.map((element) =>{
+        //     element.innerHTML = "dfsdfs";
+        // })
+
+    </script>
+</body>
+</html>

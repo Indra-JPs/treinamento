@@ -1,0 +1,29 @@
+<html> 
+<head> 
+    <title>Questão 4 e 5</title> 
+<script> 
+function contar(){ 
+    numCaracteres = document.formul.nome.value.length 
+    document.formul.numCaracteres.value = numCaracteres 
+} 
+
+</script> 
+</head> 
+<body> 
+<form name="formul"> 
+Nome Completo: <input type="text" name=nome id="nome-completo"/>
+
+<input type="button" value="Exibir Nome" id="exibir-nome"/><br>
+ 
+<br> 
+Quantidade de caracteres: <input type="Text" name="numCaracteres" size="4"> 
+<input type=button value="Conta caracteres" onclick="contar()"> 
+</form> 
+<script type="text/javascript">  
+    document.getElementById("exibir-nome").addEventListener("click", function() {
+      const nomeCompleto = document.getElementById('nome-completo').value;
+      alert('O Nome Completo: ' + nomeCompleto );	
+    });
+</script>    
+</body> 
+</html> 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true" id="lampada"
+        onclick="interruptor()" onmouseover="interruptor()" onmousedown="interruptor()">
+</body>
+<script>
+    var estadoLampada = 0;
+
+
+    function interruptor() {
+        var lamp = document.querySelector("#lampada")
+        if (estadoLampada === 0) {
+            lamp.src = "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true";
+            estadoLampada = 1;
+        } else {
+            lamp.src = "https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=true"
+            estadoLampada = 0;
+
+        }
+    }
+</script>

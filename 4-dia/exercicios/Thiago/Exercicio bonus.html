@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <button type="button" onclick="andar()">Ande!</button>
+    <button type="button" onclick="abaixa()">abaixa!</button>
+    <button type="button" onclick="inverte()">inverte!</button>
+    <div><img id="boneco" src="chara-1.png"></div>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    var pos = 0;
+    var tempo = 250;
+    var margem = 0;
+    var addMargem = 5;
+    var linha = 0;
+    var addLinha = 32;
+    invertido = 0;
+
+    var img = document.querySelector("#boneco");
+
+    function andar() {
+
+        if (invertido === 0) {
+            img.src = "chara-2.png"
+            mexe();
+            setTimeout(andar2, tempo);
+
+        } else {
+            img.src = "chara-invertido2.png"
+            mexe();
+            setTimeout(andar2, tempo);
+        }
+
+
+    }
+
+    function andar2() {
+
+        if (invertido === 0) {
+            img.src = "chara-3.png"
+            mexe();
+            setTimeout(andar3, tempo);
+
+        } else {
+            img.src = "chara-invertido3.png"
+            mexe();
+            setTimeout(andar3, tempo);
+        }
+
+    }
+
+    function andar3() {
+
+        if (invertido === 0) {
+            img.src = "chara-1.png"
+            mexe();
+            setTimeout(andar, tempo);
+
+        } else {
+            img.src = "chara-invertido1.png"
+            mexe();
+            setTimeout(andar, tempo);
+        }
+
+    }
+
+
+
+
+    function mexe() {
+
+        if (invertido === 0) {
+            margem = margem + addMargem;
+
+            img.style = "margin-left: " + margem + "px;" + "margin-top: " + linha + 'px'
+
+        } else {
+            margem = margem - addMargem;
+
+            img.style = "margin-left: " + margem + "px;" + "margin-top: " + linha + 'px'
+        }
+
+    }
+
+    function abaixa() {
+        linha = linha + addLinha;
+        img.style = "margin-top: " + linha + "px;" + " margin-left: " + margem + "px";
+    }
+
+    function inverte() {
+        if (invertido === 0) {
+            invertido = 1;
+        } else {
+            invertido = 0;
+        }
+
+    }
+
+</script>
