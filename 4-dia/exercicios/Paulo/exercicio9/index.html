@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  
+
+  <input maxlength="14" id="cpfPoint" />
+  <input type="button" value="Submit" onclick="enviar()">
+
+
+  <script>
+
+      function semponto(valor){
+          return valor != '.';
+      }
+
+function enviar(){
+
+    function semponto(value) {
+        return value != '.'
+    }
+    
+    let numerocpf = document.getElementById("cpfPoint").value;
+    var array = numerocpf.split('')
+var array1 = Object.values(array)
+
+
+const final = array1.filter(semponto)
+
+const valorf = final.toString()
+console.log(valorf)
+
+alert(valorf)
+
+
+
+    //var teste = array.filter(array)
+    //console.log(teste)
+    
+    
+}
+   
+
+
+  </script>
+
+</body>
+
+</html>
