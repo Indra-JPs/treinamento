@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <input type="button" value="TROCAR COR VERMELHO" onclick="trocarcorvermelho()">
+  <input type="button" value="TROCAR COR VERMELHO" onclick="trocarcorverde()">
+
+
+    <style type="text/css">
+    #quadrado {
+      height: 100px;
+      width: 100px;
+    }
+    </style>
+  
+    <div id="quadrado" style="background-color: #f00;"></div>  
+  
+   
+   
+   
+   <script type="text/javascript">
+
+    function trocarcorvermelho(){
+
+        document.getElementById("quadrado").style ="background-color: #f00;"
+    }
+
+    function trocarcorverde(){
+
+document.getElementById("quadrado").style ="background-color: #00FF00;"
+}
+
+
+      document.getElementById("quadrado").style = "background-color: #f00;";
+    </script>
+  
+  
+  </body>
+</html>

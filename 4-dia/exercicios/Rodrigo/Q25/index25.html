@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id = "resultado">
+        
+    </div>
+    <script type = "text/javascript">
+        let i = 0;
+        document.getElementById('resultado').innerHTML = `Repetição <br />`;
+
+        [0,1,2,3].forEach(element => {
+            document.getElementById('resultado').innerHTML += `Repetição <br />`;
+        });
+        // // for(i = i; i < 20; i++){
+        //     document.getElementById('resultado').innerHTML += `Repetição <br />`;
+
+        // // }
+    </script>
+</body>
+</html>

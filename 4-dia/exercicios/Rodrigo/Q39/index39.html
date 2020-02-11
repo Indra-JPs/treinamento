@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <form onsubmit="event.preventDefault();submitt();">
+
+        <input id='texto' placeholder="insert a text here">
+        <button type="submit">ul insert</button>
+    </form>
+
+    <ul>
+    </ul>
+
+    <script type = "text/javascript">
+
+        
+
+        const submitt = () => {
+
+            let text = document.querySelector('#texto').value;
+            let ul = document.getElementsByTagName('ul')[0];
+            let li = document.createElement('li');
+            li.innerHTML = text;
+            li.innerHTML = `<b>${text}</b>`;
+            
+            ul.appendChild(li);
+            text = '';
+        }
+
+    </script>
+</body>
+</html>

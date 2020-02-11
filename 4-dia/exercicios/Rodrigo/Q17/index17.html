@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); sun(soma1,soma2)">
+        <input id="soma1" placeholder="soma1" type="number">
+        <br />
+        <input id="soma2" placeholder="soma2" type="number">
+        <br />
+        <button id="btn-soma" type = "submit">Calcular</button>
+        <br />
+        <br />
+        <label for="resultado-soma">Resultado:</label>
+        <br />
+        <input id="resultado-soma" readonly="readonly" type="number">
+    </form>
+
+    <script type="text/javascript">
+        //this function sums two elements
+        const sun = (soma1,soma2) => {
+
+            let fieldSoma = document.getElementById('resultado-soma');
+          
+            if(soma1.value === '' || soma2.value === ''){
+                fieldSoma.value = 0;
+            }
+            else{
+                
+                let soma = parseInt(soma1.value) + parseInt(soma2.value);
+                fieldSoma.value = soma
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  
+
+  informe seu cpf <input maxlength="11" id="cpf" />
+  
+  <input type="button" value="Submit" onclick="enviar()">
+
+
+  <script>
+
+
+    function enviar() {
+/*
+
+*/
+     let cpf = document.getElementById('cpf').value
+     const final= cpf.replace(/^([\d]{3})([\d]{3})?([\d]{3})?([\d]{2})?/, "$1.$2.$3-$4");
+
+      alert(`o nome é ${final}`)
+    
+    }
+
+
+  </script>
+
+</body>
+
+</html>
