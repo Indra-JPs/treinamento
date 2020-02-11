@@ -8,4 +8,17 @@
     6. Ao clicar em um botão no form, alterar o valor value em um campo input e também refletir numa tag <p>.
 
 * Diretivas
+    1. Cria um botão e crie uma caixa (div de 100px X 100px) da cor de desejar. Ao clicar no botão mova a caixa 
+    100px para direita. (ngStyle)
+    2. Crie o <select> dinamicamente abaixo: (ngFor)
+        <select>
+            <option value="Homem de Ferro">Homem de Ferro</option>
+            <option value="Homem Aranha">Homem Aranha</option>
+            <option value="Viúva Negra">Viúva Negra</option>
+            <option value="Thor">Thor</option>
+        </select>
 
+    Quando mudar de opção adicione o valor a uma lista <ul>. Caso já esteja adicionado remova da <ul>.
+
+    3. Crie um campo <input> para receber um numero e um botão. Ao clicar no botão verifique se o numero é par ou impar.
+    Caso par, mostre uma caixa de cor verde, caso impar, mostre uma caixa vermelha (ngIf).
