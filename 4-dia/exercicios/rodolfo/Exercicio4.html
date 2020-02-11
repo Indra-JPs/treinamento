@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nome-completo" id="nomeCompleto">
+    <input type="button" value="Exibir Nome" id="btn-exibir-nome">
+    <script type="text/javascript">
+        document.getElementById("btn-exibir-nome").addEventListener("click", function(){
+            const nomeCompleto = document.getElementById('nomeCompleto').value;
+            alert('O nome completo é:', nomeCompleto);
+        })
+    </script>
+</body>
+</html>

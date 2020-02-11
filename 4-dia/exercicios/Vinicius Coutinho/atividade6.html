@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Document</title>
+</head>
+<body> 
+    <img id="myimage" src="https://www.devfuria.com.br/javascript/code-lampada/lampada-on.gif" alt="lampada"/>
+
+<script type="text/javascript">
+
+var element = document.getElementById('myimage');
+element.onmouseover //element.onclick// = function() 
+{
+    if (element.src.match("lampada-on")){
+        element.src="https://www.devfuria.com.br/javascript/code-lampada/lampada-off.gif";
+
+    } else{
+        element.src="https://www.devfuria.com.br/javascript/code-lampada/lampada-on.gif";
+    }
+};
+
+</script>
+</body>
+</html>
