@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Temporizador: <span id="temporizador">5</span></p>
+    <script>
+    var temporizador = document.getElementById('temporizador');
+
+var ativerIntervalo = function() {
+  temporizador.innerHTML = 5;
+  var intervalo = setInterval(function() {
+    var novoValor = parseInt(temporizador.innerHTML, 10) - 1;
+    temporizador.innerHTML = novoValor;
+
+    if (novoValor === 0) {
+      clearInterval(intervalo);
+      setTimeout(ativerIntervalo, 3000);
+    }
+  }, 1000);
+};
+ativerIntervalo();
+</script>
+</body>
+</html>

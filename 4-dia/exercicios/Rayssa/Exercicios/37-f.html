@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Clique no botão para inserir outros deuses</p>
+
+<button onclick="myFunction()">Inserir</button>
+
+<p id="demo"></p>
+
+<script>
+var deuses = ['Aegir', 'Aud', 'Balder'];
+document.getElementById("demo").innerHTML = deuses;
+
+function myFunction() {
+  deuses.push('Loki', 'Odin', 'Frey');
+  document.getElementById("demo").innerHTML = deuses;
+}
+</script>
+
+</body>
+</html>

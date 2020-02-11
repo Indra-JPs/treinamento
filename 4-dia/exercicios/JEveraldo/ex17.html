@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Ex17</title>
+    </head>
+    <body>
+       
+        <input type="text" id="numero1" placeholder="Informe um numero">
+        
+        <input type="text" id="numero2" placeholder="Informe um numero">
+        
+        
+        <button type="button" id="btn-somar">
+        Somar
+        </button>
+       
+        <input type="text" id="resultado">
+
+        <script>
+            document.querySelector("#btn-somar").addEventListener("click", function(){
+  
+            function somar(n1,n2){
+                if(n1 === "" || n2 === ""){
+                return 0;
+            }else{
+                return Number(n1) + Number(n2);
+            }
+            } 
+
+            let resultado = somar(
+                document.querySelector("#numero1").value,
+                document.querySelector("#numero2").value
+            )
+
+             document.querySelector("#resultado").value = resultado;
+            })
+        </script>
+    </body>
+</html>

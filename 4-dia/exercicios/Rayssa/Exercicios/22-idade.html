@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+    </style>
+    <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    
+<p>Data de nascimento: <input type="text" id="datepicker"></p>
+    <input type="button" id="entraridade" onclick='Is18()' value="Ok">
+    <div id="resultado"></div>
+    <script type="text/javascript">
+        function getIdade(data) {
+   var hoje = new Date();
+  
+    var nascimento = new Date(convertDateMMDDYYY(data.split("/")));
+
+    //Retorna a diferença entre hoje e a data de nascimento em anos.
+    var ano = hoje.getFullYear() - nascimento.getFullYear();
+ 
+    //Retorna a diferença de mês do mês de nascimento para o atual.
+    var m = hoje.getMonth() - nascimento.getMonth();
+
+    //Caso ainda não tenha ultrapassado o dia e o mês
+    if (m < 0 || (m === 0 && hoje.getDate() < nascimento.getDate())) {
+        ano--;
+    }
+    return ano;
+}
+
+function convertDateMMDDYYY(datearray) {
+  return datearray[1] + '-' + datearray[0] + '-' + datearray[2];
+}
+
+function Is18() 
+{
+  var data = document.getElementById("datepicker");
+   
+  if(getIdade(data.value) >= 18)
+       document.getElementById("resultado").innerHTML= "Você tem 18 ou mais anos de idade!";
+  else
+     document.getElementById("resultado").innerHTML="Você não tem 18 anos!";
+}
+
+$('#datepicker').datepicker();
+
+   $.datepicker.regional['pt-BR'] = {
+                closeText: 'Fechar',
+                prevText: '&#x3c;Anterior',
+                nextText: 'Pr&oacute;ximo&#x3e;',
+                currentText: 'Hoje',
+                monthNames: ['Janeiro','Fevereiro','Mar&ccedil;o','Abril','Maio','Junho',
+                'Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+                monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun',
+                'Jul','Ago','Set','Out','Nov','Dez'],
+                dayNames: ['Domingo','Segunda-feira','Ter&ccedil;a-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sabado'],
+                dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'],
+                dayNamesMin: ['Dom','Seg','Ter','Qua','Qui','Sex','Sab'],
+                weekHeader: 'Sm',
+                dateFormat: 'dd/mm/yy',
+                firstDay: 0,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix: ''};
+        $.datepicker.setDefaults($.datepicker.regional['pt-BR']);
+    </script>
+</body>
+</html>
