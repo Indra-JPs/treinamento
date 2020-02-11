@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>CPF</p>
+    <input maxlength="11" id="cpf"/>
+    &nbsp;
+    <input type ="text" id="mask"  placeholder="Ex.:000.000.000-00"/>
+    <script type="text/javascript">
+    document.getElementById("cpf").addEventListener('keyup', 
+    function cpf_mask(){
+        var cpf = document.getElementById("cpf").value;
+        document.getElementById("mask").value=cpf.slice(0,3)+"."+cpf.slice(3,6)+"."+cpf.slice(6,9)+"-"+cpf.slice(9,);
+    });
+    </script>
+    
+</body>
+</html>

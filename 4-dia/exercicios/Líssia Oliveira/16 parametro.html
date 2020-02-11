@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Digite o primeiro número</p>
+    <input type="text" name="n1" id="soma1" placeholder="Digite seu primeiro número" />
+    <p>Digite o segundo número</p>
+    <input type="text" name="n2" id="soma2" placeholder="Digite seu segundo número" />
+    <br />
+    <br />
+    <input type="button" value="Realize a soma" id="btn-soma" />
+    <br />
+    <br />
+
+  
+
+    <script type="text/javascript">
+        //somar dois numeros;
+        document.getElementById("btn-soma").addEventListener("click", function somadois() {
+            const a = parseInt(document.getElementById("soma1").value)
+            const b = parseInt(document.getElementById("soma2").value)
+            const soma = (a) + (b);
+            alert('A soma de '+a +' + '+b +' '+ 'é igual a: '+soma);
+           
+        });
+
+    </script>
+    <hr />
+</body>
+
+</html>
