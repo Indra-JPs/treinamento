@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Exercicio35</title>
+</head>
+<body>
+    <label id="data"></label> <br>
+    <label id="proximo"></label>
+    <script>
+        document.querySelector("#data").innerHTML = 
+        `${new Date().getDate()}/${new Date().getMonth()+1}/${new Date().getFullYear()}`;
+        document.querySelector("#proximo").innerHTML = `${new Date().getMonth()+2}`
+    </script>
+</body>
+</html>
