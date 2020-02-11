@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #black-square{
+            display: grid;
+            justify-content: center;
+            width:150px;
+            height:150px;
+            background-color:black;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="black-square">
+        <p>4</p>
+    </div>
+
+    <script type = "text/javascript">
+
+        
+        let flag = true;
+        const submitt = () => {
+
+            let text = document.querySelector('#texto').value;
+            let ul = document.getElementsByTagName('ul')[0];
+            let li = document.createElement('li');
+            li.innerHTML = text;
+            if(flag){
+                li.innerHTML = `${text}`;
+                flag = !flag;
+            }
+            else{
+                li.innerHTML = `<strong>${text}</strong>`;
+                flag = !flag;
+                
+            }
+            
+            ul.appendChild(li);
+            text = '';
+        }
+
+    </script>
+</body>
+</html>

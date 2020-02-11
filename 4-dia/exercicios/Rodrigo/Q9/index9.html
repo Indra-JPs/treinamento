@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- css style: -->
+    <style>
+        /* select an area under cpf field */
+        div#not-right{
+            color:red;
+            font-size:15px;
+            visibility: hidden;
+        }
+        /* select the cpf field to alter it's border color */
+        #cpf{
+            border-color:default;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <!-- create a form for managing the CPF valid numbers: -->
+    <form id="forms" onsubmit="event.preventDefault(); sendCpf()">
+        <label for="cpf">CPF:</label>
+        <br />
+        <input maxlength="14" id="cpf" placeholder="Ex.: 000.000.000-00"/>
+        <div id = "not-right">Insert a valid CPF</div>
+        <br />
+        <button type = "submit">Enviar</button>
+    </form>
+
+    <script type="text/javascript" src="index9.js">
+    </script>
+</body>
+</html>
