@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form onsubmit="event.preventDefault(); age(ano)">
+        <input id='ano' type='number' placeholder="insira numero"></input>
+        <button type="submit">calculate</button>
+    </form>
+    
+    <script>
+        const age = (age) =>{
+
+            let idade = 2020 - age.id;
+            alert(idade);
+            idade >=18 ? alert('Maior de idade') : alert('Menor de idade');
+        }
+    </script>
+</body>
+</html>
