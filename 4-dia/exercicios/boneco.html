@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onclick="mexe()">Ande!</button>
+    <img id="boneco" src="https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-1.png">
+
+
+
+
+</body>
+
+<script>
+    var pos = 0;
+    var margem = 0;
+    var boneco = document.querySelector("#boneco");
+
+    function mexe() {
+
+        if (pos === 0) {
+            boneco.src = "https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-2.png"
+            pos = 1;
+            boneco.style = "margin-left: " + margem + "px";
+            margem += 5;
+            setTimeout(mexe, 250);
+        } else if (pos === 1) {
+            boneco.src = "https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-3.png"
+            pos = 2;
+            boneco.style = "margin-left: " + margem + "px";
+            margem += 5;
+            setTimeout(mexe, 250);
+        } else {
+            boneco.src = "https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-1.png"
+            pos = 0;
+            boneco.style = "margin-left: " + margem + "px";
+            margem += 5;
+            setTimeout(mexe, 250);
+
+        }
+
+
+
+    }
+
+
+</script>
+
+</html>
