@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mudando a cor do Background</title>
+<style type="text/css">
+
+.fundo{
+background-color:#dc090d;
+}
+.fundo1{
+background-color:rgba(35, 206, 49, 0.966);
+}
+
+</style>
+<script language="javascript" type="text/javascript">
+/* Exemplo de comentário para
+  várias linhas.
+*/
+function trocar(){
+var obj=document.getElementById('body');
+if(obj.className=='fundo1'){
+	obj.className='fundo';
+}else{
+	obj.className='fundo1';
+ }
+}
+
+</script>
+</head>
+
+<body id="body" class="fundo">
+<a href="#" onclick="trocar();">vermelho</a> <br/>
+<a href="#" onclick="trocar();">verde</a>
+</body>
+</html>
+</pre>
