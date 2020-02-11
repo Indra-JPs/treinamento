@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function porcentagem(){
+        var s1 = document.getElementById("s1").value;
+    
+        var s3 = parseInt(s1) * 0.05;
+        var s4 = parseInt(s1) - parseInt(s3);
+        alert(s3);
+        alert(s4);
+    }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Calculo</legend>
+        <label>Valor 1:</label>
+        <input id="s1" type="text"/>
+    
+        <button id="somar" onclick="porcentagem()">calcular</button>
+    </fieldset>
+ 
+</body>
+</html>
