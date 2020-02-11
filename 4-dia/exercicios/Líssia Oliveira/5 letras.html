@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+ 
+</head>
+
+<body>
+    <p>Digite o texto abaixo:</p>
+    <input type="text" name="texto" id="texto" placeholder="Escreva aqui...">
+    <br />
+    <input type="button" value="Contar Caracteres" id="btn-calc" />
+    <script type="text/javascript">
+        document.getElementById("btn-calc").addEventListener("click", function() {
+            const caracter = document.getElementById('texto').value;
+            alert('A quantidade de caracteres é: ' + caracter.length);  
+        
+        });
+    </script>
+    
+</body>
+</html>

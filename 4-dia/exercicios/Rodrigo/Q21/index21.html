@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); percentage(number1)">
+        <input id="number1" placeholder="number1" type="number" step="0.01">
+        <br />
+
+        <button id="btn-mult" type = "submit">Calcular</button>
+        <br />
+        <br />
+        <label for="resultado-percentage">Resultado:</label>
+        <br />
+        <input id="resultado-percentage" readonly="readonly">
+    </form>
+
+    <script type="text/javascript">
+        //this function sums two elements
+        const percentage = (el1) => {
+
+            let fielddiv = document.getElementById('resultado-percentage');
+          
+            if(el1.value === ''){
+                fielddiv.value = 0;
+            }
+            else{
+                
+                let percent = parseFloat(el1.value) * 0.05;
+                fielddiv.value = percent;
+            }
+        }
+    </script>
+</body>
+</html>

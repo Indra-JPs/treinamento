@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="texto"><br>
+    <button type="button" id="btn"></button>
+    <ul id="nome"></ul>
+
+    <script>
+        var array = []
+        document.getElementById('btn').addEventListener('click', function(){
+            let texto = document.getElementById('texto').value
+            array.push(texto)
+        })
+    </script>
+</body>
+</html>
