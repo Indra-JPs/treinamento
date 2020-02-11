@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text"  id="soma1">
+    <input type="text"  id="soma2">
+    <input type="button" value="enviar" onclick="enviar()" id="btn-soma">
+    <div id="resultado"></div>
+    
+    
+    <script> 
+    
+    function recebe(n1,n2){
+        return n1+n2;
+    }
+    
+    
+    function enviar(){
+    let n1 = parseFloat(document.getElementById("soma1").value)
+    let n2 = parseFloat(document.getElementById("soma2").value)
+    
+ 
+    resultado =recebe(n1,n2);
+   
+    document.getElementById("resultado").innerHTML = resultado;
+
+    }
+    
+    
+    </script>
+    
+    </body>
+  
+</html>
